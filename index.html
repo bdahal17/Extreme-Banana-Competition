@@ -1,14 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Module 4 Project</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <div class="anchor"></div>
+      <div class="anchor">
+        <div class="header">
+          <select name="cars" id="cars">
+            <option value="Fred the Baker Baking Company">
+              Fred the Baker Baking Company
+            </option>
+            <option value="The inspiration for this game, Cookie Clicker">
+              The inspiration for this game, Cookie Clicker
+            </option>
+            <option value="Your contact info">Your contact info</option>
+          </select>
+          <hr />
+          <div class="main">
+            <h3>click to make donuts</h3>
+            <span id="counts">0</span>
+            <button>Donuts</button>
+          </div>
+        </div>
+      </div>
     </div>
     <script src="/src/app.js"></script>
-</body>
+  </body>
 </html>
