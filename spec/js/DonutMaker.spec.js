@@ -1,15 +1,17 @@
-describe("FEATURE 1 : Have a way to count donuts.", () => {
+describe("Feature 1 : have a way to count donuts", () => {
   describe("Can add to donut count", () => {
+    let underTest;
+    beforeEach(() => {
+      underTest = new DonutMaker();
+    });
     it("Should start with a click count of 0", () => {
-      const underTest = new DonutMaker();
       expect(underTest.clickCount).toBe(0);
     });
-    it("Should add on click to the click count when a click recorded", () => {
+    it("should add one click to the click count when a click is recorded", () => {
       underTest.recordClick();
       expect(underTest.clickCount).toBe(1);
     });
-    it("Should have a clickCount of 2 if 2 clicks recorded", () => {
-      const underTest = new DonutMaker();
+    it("Should have a clickcount of 2 if 2 clicks recorded", () => {
       underTest.recordClick();
       underTest.recordClick();
       expect(underTest.clickCount).toBe(2);

@@ -1,3 +1,4 @@
+"use strict";
 class DonutMaker {
   constructor() {
     this.clickCount = 0;
@@ -6,3 +7,4 @@ class DonutMaker {
     this.clickCount++;
   }
 }
+export { DonutMaker };
