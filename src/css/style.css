@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+html,
+body {
+  height: 100%;
+  font-family: "Syne Mono", monospace;
+  user-select: none;
+}
+/* ----------- container -------------*/
+.container {
+  background-image: url(https://i.pinimg.com/originals/0e/1b/9b/0e1b9b33820f1c52bd1d086976c90524.jpg);
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+/* ----------- Modal -------------*/
+
+/* ----------- header -------------*/
+/* ----------- header -------------*/
+/* ----------- header -------------*/
+.header {
+  background-color: white;
+  height: 25%;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#headerButton_ {
+  text-align: center;
+  padding: 2px;
+  width: 150px;
+  border-radius: 10px;
+  background-color: rgb(241, 162, 71);
+  cursor: pointer;
+}
+#headerButton_:hover {
+  background-color: rgb(226, 43, 52);
+}
+/* Inspiration button */
+._inspiration {
+  text-align: center;
+  padding: 2px;
+  width: 200px;
+  border-radius: 10px;
+  background-color: rgb(241, 162, 71);
+  cursor: pointer;
+}
+._inspiration:hover {
+  background-color: rgb(226, 43, 52);
+}
+/* Menu button */
+._dropMenu {
+  text-align: center;
+  padding: 2px;
+  width: 200px;
+  border-radius: 10px;
+  background-color: rgb(241, 162, 71);
+  cursor: pointer;
+}
+._dropMenu:hover {
+  background-color: rgb(226, 43, 52);
+}
+.drop {
+  display: none;
+  position: absolute;
+  height: 100px;
+  border-radius: 10px;
+}
+._contact {
+  cursor: pointer;
+}
+.github {
+  height: 30px;
+  width: 50px;
+}
+/* ----------- extreme drop down -------------*/
+._extreme {
+  text-align: center;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* ----------- developer drop down-------------*/
+._developer {
+  text-align: center;
+  cursor: pointer;
+  margin-top: 10px;
+}
+/* ----------- remove drop down -------------*/
+._removeDropDown {
+  text-align: center;
+  cursor: pointer;
+  margin-top: 10px;
+}
+._removeDropDown:hover {
+  background-color: bisque;
+}
+._extreme:hover {
+  background-color: bisque;
+}
+._developer:hover {
+  background-color: bisque;
+}
+
+/* ----------- main -------------*/
+/* ----------- main -------------*/
+/* ----------- main -------------*/
+.main {
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+._multiplier {
+  padding: 5px;
+  border-radius: 5px;
+  background-color: rgb(241, 162, 71);
+  cursor: pointer;
+}
+._multiplier:hover {
+  background-color: rgb(197, 133, 60);
+}
+._banana {
+  background-image: url(http://www.pngall.com/wp-content/uploads/2016/04/Banana-PNG-Image.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 10%;
+  height: 40%;
+  cursor: pointer;
+  transition: 0.1s;
+}
+._banana:hover {
+  height: 50%;
+}
+._autoClicker {
+  padding: 5px;
+  border-radius: 5px;
+  background-color: rgb(241, 162, 71);
+  cursor: pointer;
+}
+._autoClicker:hover {
+  background-color: rgb(197, 133, 60);
+}
+/* ----------- stats -------------*/
+/* ----------- stats -------------*/
+/* ----------- stats -------------*/
+.footer {
+  font-size: small;
+  text-align: center;
+  height: 30%;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.stat1 {
+}

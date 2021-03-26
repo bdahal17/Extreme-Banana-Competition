@@ -3,31 +3,62 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./src/css/style.css" />
     <title>Module 4 Project</title>
   </head>
   <body>
     <div class="container">
-      <div class="anchor">
-        <div class="header">
-          <select name="cars" id="cars">
-            <option value="Fred the Baker Baking Company">
-              Fred the Baker Baking Company
-            </option>
-            <option value="The inspiration for this game, Cookie Clicker">
-              The inspiration for this game, Cookie Clicker
-            </option>
-            <option value="Your contact info">Your contact info</option>
-          </select>
-          <hr />
-          <div class="main">
-            <h3>click to make donuts</h3>
-            <span id="counts">0</span>
-            <button id="click_button">Donuts</button>
+      <div class="header">
+        <div class="_left">
+          <h1>Extreme Banana <br />Competition</h1>
+        </div>
+        <div class="_middle">
+          <h3>
+            <h1>Bananas</h1>
+            <span id="bananaClicked_">0</span>
+          </h3>
+        </div>
+        <div class="_right">
+          <h1 id="headerButton_">Reset</h1>
+        </div>
+        <div class="_right">
+          <h1 class="_inspiration">Inspiration</h1>
+        </div>
+        <div class="_right _position">
+          <h1 class="_dropMenu">Menu</h1>
+          <div class="drop">
+            <div class="_extreme">Extreme Banana</div>
+            <div class="_developer">Developer</div>
+            <div class="_removeDropDown">x</div>
           </div>
         </div>
       </div>
+      <div class="main">
+        <div class="_multiplier">
+          <h3>Banana Multiplier <span id="_multiplierValue">2</span></h3>
+        </div>
+        <div class="_banana"></div>
+        <div class="_autoClicker">
+          <h3>Banana AutoClicker <span id="_autoClickerValue">0</span></h3>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="stat1">
+          <h3>Cost for Multiplier: <span>100</span></h3>
+          <h3>Cost for Multiplier: <span>100</span></h3>
+          <h3>Cost for Multiplier: <span>100</span></h3>
+          <h3>Cost for Multiplier: <span>100</span></h3>
+        </div>
+        <div class="stat2">
+          <h3>Cost for AutoClicker: <span>100</span></h3>
+          <h3>Cost for AutoClicker: <span>100</span></h3>
+          <h3>Cost for AutoClicker: <span>100</span></h3>
+          <h3>Cost for AutoClicker: <span>100</span></h3>
+        </div>
+      </div>
     </div>
+    <script src="src/js/features.js"></script>
     <script src="src/js/app.js" type="module"></script>
-    <script src="src/js/DonutMaker.js" type="module"></script>
+    <script src="src/js/BananaMaker.js" type="module"></script>
   </body>
 </html>
