@@ -4,16 +4,10 @@ class BananaMaker {
     this.bananaCount = 0;
     this.autoClickerCount = 0;
     this.autoClickerCost = 100;
+    this.gamePlayed = 0;
   }
   recordClick() {
     this.bananaCount++;
-    console.log("hello");
-  }
-  getBanana() {
-    return this.bananaCount;
-  }
-  getAutoClickerCount() {
-    return this.autoClickerCount;
   }
   addAutoClicker() {
     if (this.bananaCount > this.autoClickerCost) {
@@ -23,11 +17,24 @@ class BananaMaker {
       this.activateAutoClicker();
     }
   }
-  activateAutoClicker() {
-    for (let i = 0; i < this.autoClickerCount; i++) {
-      setInterval(() => {
-        this.recordClick();
-      }, 1000);
-    }
+  activateAutoClicker = () => {
+    setInterval(() => {
+      if (this.autoClickerCount >= 1) {
+        for (let i = 0; i < this.autoClickerCount; i++) {
+          this.recordClick();
+        }
+      }
+    }, 1000);
+  };
+  calcGameTime() {
+    let min = this.gamePlayed / 60;
+    return Math.floor(min) + " Minutes";
+  }
+
+  getBanana() {
+    return this.bananaCount;
+  }
+  getAutoClickerCount() {
+    return this.autoClickerCount;
   }
 }
