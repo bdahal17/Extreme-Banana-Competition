@@ -18,6 +18,8 @@ const developerButton = document.querySelector("._developer");
 const menu = document.querySelector("._dropMenu");
 const drop = document.querySelector(".drop");
 const removeDropDown = document.querySelector("._removeDropDown");
+const companyButton = document.querySelector("._extreme");
+const companyInfo = document.querySelector("._companyInfo");
 // --------------- Events -------------//
 // --------------- Events -------------//
 // --------------- Events -------------//
@@ -38,6 +40,7 @@ playAgain.addEventListener("click", () => {
 resume.addEventListener("click", () => {
   resume.style.display = "none";
   developerInfo.style.display = "none";
+  companyInfo.style.display = "none";
 });
 developerButton.addEventListener("click", () => {
   resume.style.display = "block";
@@ -48,6 +51,11 @@ menu.addEventListener("click", () => {
   drop.style.display = "block";
 });
 removeDropDown.addEventListener("click", () => {
+  drop.style.display = "none";
+});
+companyButton.addEventListener("click", () => {
+  companyInfo.style.display = "block";
+  resume.style.display = "block";
   drop.style.display = "none";
 });
 
