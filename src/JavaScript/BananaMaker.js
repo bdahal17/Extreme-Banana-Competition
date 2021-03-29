@@ -13,7 +13,7 @@ class BananaMaker {
     if (this.bananaCount > this.autoClickerCost) {
       this.autoClickerCount++;
       this.bananaCount -= 100;
-      this.autoClickerCost += this.autoClickerCost * 0.1;
+      this.autoClickerCost += Math.floor(this.autoClickerCost * 0.1);
       this.activateAutoClicker();
     }
   }
