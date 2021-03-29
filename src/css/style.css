@@ -169,11 +169,24 @@ a:visited {
 /* ----------- stats HTML-------------*/
 /* ----------- stats HTML-------------*/
 /* ----------- stats HTML-------------*/
-._object {
+._object,
+._companyInfo,
+._developerInfo {
   position: absolute;
   background-color: transparent;
   border-radius: 10px;
   overflow: hidden;
+}
+._companyInfo {
+  display: none;
+}
+._developerInfo {
+  display: none;
+  width: 500px;
+  height: 200px;
+  border: hidden;
+}
+._object {
   display: none;
 }
 ._statContainer {
@@ -207,7 +220,8 @@ a:visited {
   display: flex;
   justify-content: center;
 }
-._playButton {
+._playButton,
+._resumeButton {
   width: 500px;
   border-radius: 5px;
   background-color: rgb(180, 124, 70);
@@ -217,6 +231,37 @@ a:visited {
   box-shadow: 5px 5px 10px black;
   padding: 5px;
 }
+._resumeButton {
+  display: none;
+}
 ._playButton:hover {
   background-color: green;
+}
+._resumeButton:hover {
+  background-color: green;
+}
+._githubLogo {
+  height: 50px;
+  width: 50px;
+}
+._contactMain {
+  background-color: rgb(180, 124, 70);
+  text-align: center;
+  height: 100%;
+}
+._contactContainer {
+  height: 100%;
+  overflow: hidden;
+}
+._contacts {
+  width: 100%;
+  height: 200px;
+}
+._github {
+  width: 100px;
+  display: inline-block;
+}
+._linkedin {
+  width: 100px;
+  display: inline-block;
 }

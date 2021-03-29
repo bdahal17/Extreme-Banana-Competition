@@ -12,6 +12,12 @@ const bananaMultiplier = document.querySelector("_multiplier");
 const resetGame = document.querySelector("._reset");
 const statHtml = document.querySelector("._object");
 const playAgain = document.querySelector("._playButton");
+const resume = document.querySelector("._resumeButton");
+const developerInfo = document.querySelector("._developerInfo");
+const developerButton = document.querySelector("._developer");
+const menu = document.querySelector("._dropMenu");
+const drop = document.querySelector(".drop");
+const removeDropDown = document.querySelector("._removeDropDown");
 // --------------- Events -------------//
 // --------------- Events -------------//
 // --------------- Events -------------//
@@ -23,6 +29,26 @@ bananaAutoClicker.addEventListener("click", () => {
   bananaMaker.addAutoClicker();
   bananaAutoClickerCount.innerText = bananaMaker.autoClickerCount;
   autoClickerCost.innerText = bananaMaker.autoClickerCost;
+});
+playAgain.addEventListener("click", () => {
+  statHtml.style.display = "none";
+  playAgain.style.display = "none";
+  location.reload();
+});
+resume.addEventListener("click", () => {
+  resume.style.display = "none";
+  developerInfo.style.display = "none";
+});
+developerButton.addEventListener("click", () => {
+  resume.style.display = "block";
+  developerInfo.style.display = "block";
+  drop.style.display = "none";
+});
+menu.addEventListener("click", () => {
+  drop.style.display = "block";
+});
+removeDropDown.addEventListener("click", () => {
+  drop.style.display = "none";
 });
 
 // --------------- Game Timer -------------//
@@ -38,11 +64,6 @@ resetGame.addEventListener("click", () => {
     statHtml.style.display = "block";
     playAgain.style.display = "block";
   }, 1000);
-});
-playAgain.addEventListener("click", () => {
-  statHtml.style.display = "none";
-  playAgain.style.display = "none";
-  location.reload();
 });
 setInterval(() => {
   bananaMaker.gamePlayed++;
