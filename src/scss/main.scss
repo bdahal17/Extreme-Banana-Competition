@@ -1,3 +1,5 @@
+$mainColor: #272727;
+
 @import url("https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap");
 * {
   box-sizing: border-box;
@@ -106,13 +108,13 @@ a:visited {
   margin-top: 10px;
 }
 ._removeDropDown:hover {
-  background-color: rgb(184, 183, 183, 0.3);
+  background-color: $mainColor;
 }
 ._extreme:hover {
-  background-color: rgb(184, 183, 183, 0.3);
+  background-color: $mainColor;
 }
 ._developer:hover {
-  background-color: rgb(184, 183, 183, 0.3);
+  background-color: $mainColor;
 }
 
 /* ----------- main -------------*/

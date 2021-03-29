@@ -1,0 +1,310 @@
+@import url("https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Syne Mono", monospace;
+  user-select: none;
+}
+
+/* ----------- container -------------*/
+.container {
+  background-image: url(https://i.pinimg.com/originals/0e/1b/9b/0e1b9b33820f1c52bd1d086976c90524.jpg);
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+a:link,
+a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+/* ----------- Modal -------------*/
+/* ----------- header -------------*/
+/* ----------- header -------------*/
+/* ----------- header -------------*/
+.header {
+  background-color: white;
+  height: 25%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#headerButton_ {
+  text-align: center;
+  padding: 2px;
+  width: 150px;
+  border-radius: 10px;
+  background-color: #f1a247;
+  cursor: pointer;
+}
+
+#headerButton_:hover {
+  background-color: #e22b34;
+}
+
+/* Inspiration button */
+._inspiration {
+  text-align: center;
+  padding: 2px;
+  width: 200px;
+  border-radius: 10px;
+  background-color: #f1a247;
+  cursor: pointer;
+}
+
+._inspiration:hover {
+  background-color: #e22b34;
+}
+
+/* Menu button */
+._dropMenu {
+  text-align: center;
+  padding: 2px;
+  width: 200px;
+  border-radius: 10px;
+  background-color: #f1a247;
+  cursor: pointer;
+}
+
+._dropMenu:hover {
+  background-color: #e22b34;
+}
+
+.drop {
+  display: none;
+  position: absolute;
+  height: 100px;
+  border-radius: 10px;
+  font-size: 25px;
+}
+
+._contact {
+  cursor: pointer;
+}
+
+.github {
+  height: 30px;
+  width: 50px;
+}
+
+/* ----------- extreme drop down -------------*/
+._extreme {
+  text-align: center;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* ----------- developer drop down-------------*/
+._developer {
+  text-align: center;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* ----------- remove drop down -------------*/
+._removeDropDown {
+  text-align: center;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+._removeDropDown:hover {
+  background-color: #272727;
+}
+
+._extreme:hover {
+  background-color: #272727;
+}
+
+._developer:hover {
+  background-color: #272727;
+}
+
+/* ----------- main -------------*/
+/* ----------- main -------------*/
+/* ----------- main -------------*/
+.main {
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+._multiplier {
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #f1a247;
+  cursor: pointer;
+}
+
+._multiplier:hover {
+  background-color: #c5853c;
+}
+
+._banana {
+  background-image: url(http://www.pngall.com/wp-content/uploads/2016/04/Banana-PNG-Image.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 10%;
+  height: 40%;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+._banana:hover {
+  height: 50%;
+}
+
+._autoClicker {
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #f1a247;
+  cursor: pointer;
+}
+
+._autoClicker:hover {
+  background-color: #c5853c;
+}
+
+/* ----------- stats -------------*/
+/* ----------- stats -------------*/
+/* ----------- stats -------------*/
+.footer {
+  font-size: small;
+  text-align: center;
+  height: 30%;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* ----------- stats HTML-------------*/
+/* ----------- stats HTML-------------*/
+/* ----------- stats HTML-------------*/
+._object,
+._companyInfo,
+._developerInfo {
+  position: absolute;
+  background-color: transparent;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+._companyInfo {
+  display: none;
+}
+
+._developerInfo {
+  display: none;
+  width: 500px;
+  height: 200px;
+  border: hidden;
+}
+
+._object {
+  display: none;
+}
+
+._statContainer {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+._statContainerContent {
+  background-color: #b47c46;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 20px;
+}
+
+._statSize {
+  background-color: #b47c46;
+  padding: 5px;
+}
+
+._statHeader {
+  width: 100%;
+  text-align: center;
+}
+
+._playGameButton {
+  width: 100%;
+  font-size: 25px;
+  position: absolute;
+  top: 420px;
+  display: flex;
+  justify-content: center;
+}
+
+._playButton,
+._resumeButton {
+  width: 500px;
+  border-radius: 5px;
+  background-color: #b47c46;
+  cursor: pointer;
+  text-align: center;
+  display: none;
+  box-shadow: 5px 5px 10px black;
+  padding: 5px;
+}
+
+._resumeButton {
+  display: none;
+}
+
+._playButton:hover {
+  background-color: green;
+}
+
+._resumeButton:hover {
+  background-color: green;
+}
+
+._githubLogo {
+  height: 50px;
+  width: 50px;
+}
+
+._contactMain {
+  background-color: #b47c46;
+  text-align: center;
+  height: 100%;
+}
+
+._contactContainer {
+  height: 100%;
+  overflow: hidden;
+}
+
+._contacts {
+  width: 100%;
+  height: 200px;
+}
+
+._github {
+  width: 100px;
+  display: inline-block;
+}
+
+._linkedin {
+  width: 100px;
+  display: inline-block;
+}
+/*# sourceMappingURL=main.css.map */
