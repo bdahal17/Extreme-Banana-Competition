@@ -1,0 +1,51 @@
+/* ----------- main -------------*/
+/* ----------- main -------------*/
+/* ----------- main -------------*/
+.main {
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+._multiplier {
+  padding: 5px;
+  border-radius: 5px;
+  background-color: rgb(241, 162, 71);
+  cursor: pointer;
+}
+._multiplier:hover {
+  background-color: rgb(197, 133, 60);
+}
+._banana {
+  background-image: url(http://www.pngall.com/wp-content/uploads/2016/04/Banana-PNG-Image.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 10%;
+  height: 40%;
+  cursor: pointer;
+  transition: 0.1s;
+}
+._banana:hover {
+  height: 50%;
+}
+._autoClicker {
+  padding: 5px;
+  border-radius: 5px;
+  background-color: rgb(241, 162, 71);
+  cursor: pointer;
+}
+._autoClicker:hover {
+  background-color: rgb(197, 133, 60);
+}
+/* ----------- stats -------------*/
+/* ----------- stats -------------*/
+/* ----------- stats -------------*/
+.footer {
+  font-size: small;
+  text-align: center;
+  height: 30%;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
