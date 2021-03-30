@@ -8,7 +8,9 @@ const bananaClickButton = document.querySelector("._banana");
 const bananaAutoClicker = document.querySelector("._autoClicker");
 const bananaAutoClickerCount = document.querySelector("._autoClickerValue");
 const autoClickerCost = document.querySelector("._autoClickerCost");
-const bananaMultiplier = document.querySelector("_multiplier");
+const bananaMultiplier = document.querySelector("._multiplier");
+const bananaMultiplierValue = document.querySelector("._multiplierValue");
+const multiplierCostValue = document.querySelector("._multiplierCostValue");
 const resetGame = document.querySelector("._reset");
 const statHtml = document.querySelector("._object");
 const playAgain = document.querySelector("._playButton");
@@ -23,6 +25,12 @@ const companyInfo = document.querySelector("._companyInfo");
 // --------------- Events -------------//
 // --------------- Events -------------//
 // --------------- Events -------------//
+bananaMultiplier.addEventListener("click", () => {
+  bananaMaker.addBananaMultiplier();
+  bananaMultiplierValue.innerText = bananaMaker.bananaMultiplier;
+  multiplierCostValue.innerHTML = bananaMaker.bananaMultiplierCost;
+});
+
 bananaClickButton.addEventListener("click", () => {
   bananaMaker.recordClick();
   numberOfClicks.innerText = bananaMaker.bananaCount;
@@ -78,6 +86,8 @@ setInterval(() => {
   console.log(bananaMaker.calcGameTime());
   numberOfClicks.innerText = bananaMaker.bananaCount;
   bananaAutoClickerCount.innerText = bananaMaker.autoClickerCount;
+  autoClickerCost.innerHTML = bananaMaker.autoClickerCost;
+  bananaMultiplierValue.innerText = bananaMaker.bananaMultiplier;
   if (bananaMaker.bananaCount > bananaMaker.autoClickerCost) {
     bananaAutoClicker.style.backgroundColor = "orange";
   } else {
